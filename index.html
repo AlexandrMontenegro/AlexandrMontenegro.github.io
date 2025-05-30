@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerTools - Главная</title>
+    <meta name="description" content="Купить электроперфоратор Bosch, Makita, DeWalt в интернет-магазине PowerTools. Быстрая доставка, лучшие цены!">
+    <meta name="keywords" content="перфоратор купить, электроперфоратор Bosch, makita перфоратор, dewalt перфоратор">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-blue-600 text-white sticky top-0 z-10">
+        <nav class="container mx-auto flex justify-between items-center py-4">
+            <h1 class="text-2xl font-bold">PowerTools</h1>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="hover:underline">Главная</a></li>
+                <li><a href="catalog.html" class="hover:underline">Каталог</a></li>
+                <li><a href="about.html" class="hover:underline">О нас</a></li>
+                <li><a href="contact.html" class="hover:underline">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="w-full bg-blue-600 text-white py-4 px-6 animate-pulse text-center text-xl font-bold">
+            СКИДКА 15% на все перфораторы до конца месяца!
+            <a href="catalog.html" class="ml-4 underline text-yellow-300 hover:text-yellow-400">Перейти в каталог</a>
+        </div>
+        <!-- Hero Section -->
+        <section class="bg-blue-800 text-white py-20">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-4">Электроперфораторы для любых задач</h2>
+                <p class="text-lg mb-6">Надежные инструменты от ведущих брендов по доступным ценам</p>
+                <a href="catalog.html" class="bg-yellow-500 text-black px-6 py-3 rounded-lg hover:bg-yellow-600 transition">Перейти в каталог</a>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="container mx-auto py-12">
+            <h2 class="text-3xl font-bold text-center mb-8">Популярные модели</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <img src="https://via.placeholder.com/300x200" alt="Перфоратор Bosch" class="w-full h-48 object-cover mb-4 rounded">
+                    <h3 class="text-xl font-semibold">Bosch GBH 2-26</h3>
+                    <p class="text-gray-600">Мощность: 800 Вт</p>
+                    <p class="text-lg font-bold text-blue-600">12 990 ₽</p>
+                    <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Купить</button>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <img src="https://www.proshop.fi/Images/1600x1200/2474627_a9fabd576ba7.jpg" alt="Перфоратор Makita" class="w-full h-48 object-cover mb-4 rounded">
+                    <h3 class="text-xl font-semibold">Makita HR2470</h3>
+                    <p class="text-gray-600">Мощность: 780 Вт</p>
+                    <p class="text-lg font-bold text-blue-600">11 490 ₽</p>
+                    <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Купить</button>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <img src="https://via.placeholder.com/300x200" alt="Перфоратор DeWalt" class="w-full h-48 object-cover mb-4 rounded">
+                    <h3 class="text-xl font-semibold">DeWalt DCH133M1</h3>
+                    <p class="text-gray-600">Мощность: 900 Вт</p>
+                    <p class="text-lg font-bold text-blue-600">15 990 ₽</p>
+                    <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Купить</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 PowerTools. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
