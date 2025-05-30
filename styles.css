@@ -1,0 +1,27 @@
+body {
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header nav a:hover {
+    color: #fef08a;
+    transition: color 0.2s;
+}
+
+button, a {
+    transition: all 0.2s ease;
+}
+
+.product {
+    transition: all 0.3s ease;
+}
+
+input, textarea, select {
+    transition: all 0.2s ease;
+}
+
+main {
+    flex: 1;
+}

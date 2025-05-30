@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerTools - Каталог</title>
+    <meta name="description" content="Купить электроперфоратор Bosch, Makita, DeWalt в интернет-магазине PowerTools. Быстрая доставка, лучшие цены!">
+    <meta name="keywords" content="перфоратор купить, электроперфоратор Bosch, makita перфоратор, dewalt перфоратор">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-blue-600 text-white sticky top-0 z-10">
+        <nav class="container mx-auto flex justify-between items-center py-4">
+            <h1 class="text-2xl font-bold">PowerTools</h1>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="hover:underline">Главная</a></li>
+                <li><a href="catalog.html" class="hover:underline font-semibold">Каталог</a></li>
+                <li><a href="about.html" class="hover:underline">О нас</a></li>
+                <li><a href="contact.html" class="hover:underline">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mx-auto py-12">
+        <h2 class="text-3xl font-bold text-center mb-8">Каталог электроперфораторов</h2>
+        <p class="text-gray-700 mb-4">
+    В интернет-магазине PowerTools вы можете купить профессиональные электроперфораторы Bosch, Makita и DeWalt по доступным ценам с доставкой по России. Подберите перфоратор мощностью от 800 до 900 Вт для любых строительных задач.
+</p>
+        <div class="flex flex-col lg:flex-row gap-8">
+            <!-- Filters -->
+            <aside class="lg:w-1/4 bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold mb-4">Фильтры</h3>
+                <div class="mb-4">
+                    <label class="block text-gray-700 mb-2">Бренд</label>
+                    <select id="brand-filter" class="w-full p-2 border rounded">
+                        <option value="all">Все бренды</option>
+                        <option value="Bosch">Bosch</option>
+                        <option value="Makita">Makita</option>
+                        <option value="DeWalt">DeWalt</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-gray-700 mb-2">Цена, ₽</label>
+                    <input type="range" id="price-filter" min="5000" max="20000" step="1000" value="20000" class="w-full mb-2">
+                    <div class="flex justify-between text-sm text-gray-600">
+                        <span>5 000</span>
+                        <span id="price-value">20 000</span>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Products -->
+            <div class="lg:w-3/4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="product-list">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition product" data-brand="Bosch" data-price="12990">
+                    <img src="https://via.placeholder.com/300x200" alt="Перфоратор Bosch" class="w-full h-48 object-cover mb-4 rounded">
+                    <h3 class="text-xl font-semibold">Bosch GBH 2-26</h3>
+                    <p class="text-gray-600">Мощность: 800 Вт</p>
+                    <p class="text-lg font-bold text-blue-600">12 990 ₽</p>
+                    <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Купить</button>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition product" data-brand="Makita" data-price="11490">
+                    <img src="https://via.placeholder.com/300x200" alt="Перфоратор Makita" class="w-full h-48 object-cover mb-4 rounded">
+                    <h3 class="text-xl font-semibold">Makita HR2470</h3>
+                    <p class="text-gray-600">Мощность: 780 Вт</p>
+                    <p class="text-lg font-bold text-blue-600">11 490 ₽</p>
+                    <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Купить</button>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition product" data-brand="DeWalt" data-price="15990">
+                    <img src="https://via.placeholder.com/300x200" alt="Перфоратор DeWalt" class="w-full h-48 object-cover mb-4 rounded">
+                    <h3 class="text-xl font-semibold">DeWalt DCH133M1</h3>
+                    <p class="text-gray-600">Мощность: 900 Вт</p>
+                    <p class="text-lg font-bold text-blue-600">15 990 ₽</p>
+                    <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Купить</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="mt-8 text-sm text-gray-600">
+    Полезные ссылки:
+    <ul class="list-disc list-inside">
+        <li><a href="https://bosch-group.ru/" target="_blank" class="text-blue-600 hover:underline">Официальный сайт Bosch</a></li>
+        <li><a href="https://makitarussia.ru/" target="_blank" class="text-blue-600 hover:underline">Makita Россия</a></li>
+        <li><a href="https://dewalt.store/elektroinstrument.html" target="_blank" class="text-blue-600 hover:underline">DeWalt официальный сайт</a></li>
+    </ul>
+</div>
+
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 PowerTools. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
